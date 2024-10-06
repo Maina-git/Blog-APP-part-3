@@ -1,0 +1,57 @@
+@import "./Mixins.scss";
+@import "./Variables.scss";
+
+.login{
+    height:100vh;
+    display:flex;
+    @include column;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(20, 0, 0, 0.5)
+        ), url(/image/student-865073_1280.jpg);
+        background-position:center;
+        object-fit: cover;
+.loginTitle{
+font-size:50px;
+color:$white;
+}
+.loginForm{
+margin-top:20px;
+@include flex;
+flex-direction:column;
+label{
+    margin:10px 0;
+    color:$white;
+}
+input{
+    padding:10px;
+    width:20vw;
+    border-radius:10px;
+    background:$white;
+    border:0;   
+    outline:none;
+}
+.loginButton{
+    margin-top:20px;
+    cursor:pointer;
+    background-color:$teal;
+    border:none;
+    color:$white;
+    border-radius:10px;
+    padding:10px;
+}
+}
+.loginRegisterButton{
+    position:absolute;
+    top:60px;
+    right:20px;
+    background-color:$lightCoral;
+    cursor:pointer;
+    padding:10px;
+    color:$white;
+    border-radius:10px;
+    border:0;
+    outline:none;
+}
+
+}

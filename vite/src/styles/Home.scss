@@ -1,0 +1,10 @@
+
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.home{
+@include flex;
+max-height:max-content;
+width:100vw;
+overflow-y: hidden;
+}

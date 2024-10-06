@@ -1,0 +1,53 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.topbar{
+    width:100%;
+    height:80px;
+    background-color:$white;
+    position:sticky;
+    top:0;
+    @include flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index:999;
+.topleft{
+    flex:3;
+  @include flex;
+.topIcon{
+    font-size:20px;
+    margin-left:10px;
+    color:#4444;
+    cursor:pointer;
+}
+
+}
+.topcenter{
+    flex:6;
+ @include flex;
+    .listItem{
+        margin:20px;
+        font-size:18px;
+        font-weight:100;
+        cursor:pointer;
+        text-decoration:none;
+        color:$black;
+    }
+}
+}
+.topright{
+    flex:3;
+   @include flex;
+    .topimage{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        object-fit:cover;
+    }
+    .topSearchIcon{
+        font-size:18px;
+        color:$darkGray;
+        margin-left:15px;
+        cursor:pointer;
+    }
+}
+
